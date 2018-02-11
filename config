@@ -1,0 +1,29 @@
+# Configuration file
+
+# Your Godaddy API credential
+godaddy_key="your_key"
+godaddy_secret="your_secret"
+
+# Your Gitlab credentials
+# You can get it at tab Acess tokens on your User settings
+gitlab_personal_acess_token="your_token"
+
+# your email (will be given to certbot to contact when close to expire)
+email="mail@mail.com"
+
+# Root domain without any subdomain, like for example: "example.com"
+export root_domain="domain.com"
+
+# Subdomain name
+# would "hello" if you want a certificate hello.example.com
+# leave blank (that is: "") if you want to install in root domain
+export subdomain="subdomain"
+
+# Either id number (get it at the project settings, general tab) or
+# namespace (username) followed by %2F and project name like:
+# username%2Fprojectname
+# note: you have to URIEncode it if it has special character
+# if unsure, use your id number
+export gitlab_project_id="username%2Fplain-html"
+
+
